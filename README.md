@@ -1,6 +1,6 @@
 # Fedora Packages (for Haskell)
 
-Access the [Fedora Packages](https://apps.fedoraproject.org/packages/) from
+Access the [Fedora Packages](https://apps.fedoraproject.org/packages/) API from
 Haskell.
 
 See Haddock docs for usage information.
