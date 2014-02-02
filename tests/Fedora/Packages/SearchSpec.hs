@@ -12,7 +12,7 @@ spec :: Spec
 spec = parallel $ do
   describe "searching Fedora Packages" $ do
     it "produces a valid result for 'firefox'" $ do
-      results <- search defaultConfig (SearchQuery (SearchFilter "firefox") 100 0)
+      results <- search defaultConfig (Query (SearchFilter "firefox") 100 0)
       length (results ^. srRows) > 10 `shouldBe` True
       let h = head (results ^. srRows)
       (h ^. develOwner) `shouldBe` "gecko-maint"

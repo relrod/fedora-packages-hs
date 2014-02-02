@@ -17,6 +17,7 @@ module Fedora.Packages
   ( module F
   ) where
 
+import Fedora.Packages.API as F
 import Fedora.Packages.Config as F
 import Fedora.Packages.Releases as F
 import Fedora.Packages.Search as F
