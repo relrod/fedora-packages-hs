@@ -15,6 +15,7 @@ library
   exposed-modules:     Fedora.Packages
                      , Fedora.Packages.Config
                      , Fedora.Packages.Lens
+                     , Fedora.Packages.Releases
                      , Fedora.Packages.Search
 
   build-depends:       aeson >= 0.6

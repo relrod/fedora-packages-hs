@@ -17,10 +17,13 @@ import Control.Lens (makeLenses)
 
 import Fedora.Packages.Config
 import Fedora.Packages.Package
+import Fedora.Packages.Releases
 import Fedora.Packages.Search
 
 makeLenses ''PackagesConfig
 makeLenses ''Package
+makeLenses ''Release
+makeLenses ''ReleasesResult
 makeLenses ''SearchFilter
 makeLenses ''SearchQuery
 makeLenses ''SearchResults
