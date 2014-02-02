@@ -15,6 +15,7 @@
 module Fedora.Packages.Releases
   ( Release (..)
   , releases
+  , releases'
   ) where
 
 import Fedora.Packages.API
@@ -55,3 +56,16 @@ releases c s =
   let rJson = Query (ReleasesFilter s) 1 0
   in
    apiGet ("bodhi/query/query_active_releases/" <> LS.toStrict (encode rJson)) c
+
+-- | Helper method to query for release information without having to worry
+-- about traversing into 'StandardResults'.
+--
+-- This is provided because this is one of the few places where the paging
+-- information probably really doesn't matter.
+--
+-- Equivalent to
+-- >>> _rows <$> releases c q
+releases' :: PackagesConfig -- ^ The configuration to use.
+          -> T.Text         -- ^ The name of the package to look up.
+          -> IO [Release]
+releases' c q = _srRows <$> releases c q

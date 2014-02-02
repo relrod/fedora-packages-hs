@@ -1,5 +1,16 @@
 {-# LANGUAGE OverloadedStrings #-}
 
+-----------------------------------------------------------------------------
+-- |
+-- Copyright : (c) 2014 Ricky Elrod
+-- License : BSD3
+--
+-- Maintainer : Ricky Elrod <ricky@elrod.me>
+-- Stability : experimental
+--
+-- Tests for Fedora.Packages.Search.
+----------------------------------------------------------------------------
+
 module Fedora.Packages.SearchSpec where
 
 import Fedora.Packages

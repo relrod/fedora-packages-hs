@@ -13,6 +13,7 @@ cabal-version:       >=1.10
 
 library
   exposed-modules:     Fedora.Packages
+                     , Fedora.Packages.API
                      , Fedora.Packages.Config
                      , Fedora.Packages.Lens
                      , Fedora.Packages.Releases
