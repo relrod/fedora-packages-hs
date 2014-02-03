@@ -65,7 +65,7 @@ releases c s =
 --
 -- Equivalent to:
 --
--- > _rows <$> releases c q
+-- > _srRows <$> releases c q
 releases' :: PackagesConfig -- ^ The configuration to use.
           -> T.Text         -- ^ The name of the package to look up.
           -> IO [Release]
