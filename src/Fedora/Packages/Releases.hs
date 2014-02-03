@@ -63,8 +63,9 @@ releases c s =
 -- This is provided because this is one of the few places where the paging
 -- information probably really doesn't matter.
 --
--- Equivalent to
--- >>> _rows <$> releases c q
+-- Equivalent to:
+--
+-- > _rows <$> releases c q
 releases' :: PackagesConfig -- ^ The configuration to use.
           -> T.Text         -- ^ The name of the package to look up.
           -> IO [Release]

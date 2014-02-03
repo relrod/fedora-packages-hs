@@ -18,7 +18,6 @@ import Control.Lens (makeLenses)
 import Fedora.Packages.API
 import Fedora.Packages.Config
 import Fedora.Packages.Builds
-import Fedora.Packages.Package
 import Fedora.Packages.Releases
 import Fedora.Packages.Search
 
