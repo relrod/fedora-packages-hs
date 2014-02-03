@@ -1,5 +1,5 @@
 name:                fedora-packages
-version:             1.0.0
+version:             0.0.1
 synopsis:            Haskell interface to the Fedora Packages webapp API.
 description:         Provides access to the (<https://apps.fedoraproject.org/packages/ Fedora Packages>) API.
 homepage:            https://github.com/CodeBlock/fedora-packages-hs

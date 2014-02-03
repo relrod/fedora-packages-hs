@@ -7,7 +7,8 @@ Haskell.
 
 See Haddock docs for usage information.
 
-Currently only search is implemented.
+Currently only bits and pieces of the API are implemented, and this is a work
+in progress.
 
 # License
 
