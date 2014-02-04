@@ -45,6 +45,7 @@ module Fedora.Packages
   ) where
 
 import Fedora.Packages.API as F
+import Fedora.Packages.Bugs as F
 import Fedora.Packages.Builds as F
 import Fedora.Packages.Config as F
 import Fedora.Packages.Releases as F

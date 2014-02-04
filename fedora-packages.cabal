@@ -16,6 +16,7 @@ library
   exposed-modules:     Fedora.Packages
                      , Fedora.Packages.API
                      , Fedora.Packages.Builds
+                     , Fedora.Packages.Bugs
                      , Fedora.Packages.Config
                      , Fedora.Packages.Lens
                      , Fedora.Packages.Releases
