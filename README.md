@@ -1,6 +1,7 @@
 # Fedora Packages (for Haskell)
 
 [![Build Status](https://travis-ci.org/CodeBlock/fedora-packages-hs.png)](https://travis-ci.org/CodeBlock/fedora-packages-hs)
+[![Hackage](http://img.shields.io/hackage/v/fedora-packages.png)](http://hackage.haskell.org/package/fedora-packages)
 
 Access the [Fedora Packages](https://apps.fedoraproject.org/packages/) API from
 Haskell.
