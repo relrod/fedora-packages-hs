@@ -52,7 +52,7 @@ test-suite hunit
                      , lens >= 4 && < 5
                      , text >= 0.11
                      -- And of course...
-                     , hspec ==1.8.*
+                     , hspec >= 1.8 && < 2
 
 test-suite hlint
   hs-source-dirs:      tests
