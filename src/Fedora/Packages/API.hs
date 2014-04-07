@@ -18,6 +18,7 @@ module Fedora.Packages.API
     -- * Requests
   , Query (..)
   , apiGet
+  , defaultQueryPagination
   ) where
 
 import Fedora.Packages.Config
@@ -88,3 +89,10 @@ instance ToJSON a => ToJSON (Query a) where
                                  , "rows_per_page" .= r
                                  , "start_row" .= sr
                                  ]
+
+-- | Given something searchable, return a 'Query' with default values for JSON
+-- fields "rows_per_page" and "start_row".
+--
+-- The default values (respectively) are 20 and 0.
+defaultQueryPagination :: a -> Query a
+defaultQueryPagination a = Query a 20 0
