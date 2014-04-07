@@ -38,17 +38,17 @@ data Version =
   | EL7
   | EL6
   | EL5
-  deriving (Eq, Show)
+  deriving (Eq)
 
-versionToText :: Version -> T.Text
-versionToText AllVersions = ""
-versionToText Rawhide     = "rawhide"
-versionToText F20         = "20"
-versionToText F19         = "19"
-versionToText F18         = "18"
-versionToText EL7         = "7"
-versionToText EL6         = "6"
-versionToText EL5         = "5"
+instance Show Version where
+  show AllVersions = ""
+  show Rawhide     = "rawhide"
+  show F20         = "20"
+  show F19         = "19"
+  show F18         = "18"
+  show EL7         = "7"
+  show EL6         = "6"
+  show EL5         = "5"
 
 data BugsFilter = BugsFilter {
     _bPackage :: T.Text
@@ -57,7 +57,7 @@ data BugsFilter = BugsFilter {
 
 instance ToJSON BugsFilter where
   toJSON (BugsFilter p v) = object [ "package" .= p
-                                   , "version" .= versionToText v
+                                   , "version" .= show v
                                    ]
 
 data Bug = Bug {
